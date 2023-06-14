@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content-wrapper"> <!-- Add this wrapper div -->
+        <div id="landing-container">
+            <h1 id="welcome-title">Irrigation Control and Weather Station</h1>
+            <p id="welcome-text">check sensor status, manually water plants, control schedule and see water consumption.</p>
+            <a id="explore-btn" href="{{ url_for('projects') }}">Explore My Projects</a>
+        </div>
+    </div>
+{% endblock %}
