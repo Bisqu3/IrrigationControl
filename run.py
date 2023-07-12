@@ -78,6 +78,7 @@ def timewait():
                 break
             else:
                 print("Skip Night Watering")
+                sleep(60)
         else:
             sleep(30)
 
