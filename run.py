@@ -24,6 +24,7 @@ sout = [morning_water,midday_sensorcheck,night_water]
 #debug options
 dotest = False;
 reset_gpio = False;
+errcode = 1
 
 #main function takes time on device as cue to send signal to relay
 #check state of sensors to decide how long program should run
@@ -78,6 +79,7 @@ def timewait():
                 break
             else:
                 print("Skip Night Watering")
+                sleep(60)
         else:
             sleep(30)
 
@@ -116,5 +118,3 @@ try:
         main();
 except:
     print("error "+str(errcode))
-
-
